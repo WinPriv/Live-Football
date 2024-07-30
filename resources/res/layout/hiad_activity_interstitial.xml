@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hiad_interstitial_layout"
+    android:background="@color/hiad_black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.huawei.openalliance.ad.ppskit.views.PPSInterstitialView
+        android:id="@+id/pps_interstitial_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

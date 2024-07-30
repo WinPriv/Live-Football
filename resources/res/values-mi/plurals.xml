@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hiad_dismiss_dilaog">
+        <item quantity="zero">Ka kati te matapihi hei te %1$s hekona.</item>
+        <item quantity="one">Ka kati te matapihi hei te %1$s hekona.</item>
+        <item quantity="two">Ka kati te matapihi hei te %1$s hekona.</item>
+        <item quantity="few">Ka kati te matapihi hei te %1$s hekona.</item>
+        <item quantity="many">Ka kati te matapihi hei te %1$s hekona.</item>
+        <item quantity="other">Ka kati te matapihi hei te %1$s hekona.</item>
+    </plurals>
+    <plurals name="hiad_interstitial_time_countdown">
+        <item quantity="zero">Ka taea te kati te pānui hokohoko hei te %ds</item>
+        <item quantity="one">Ka taea te kati te pānui hokohoko hei te %ds</item>
+        <item quantity="two">Ka taea te kati te pānui hokohoko hei te %ds</item>
+        <item quantity="few">Ka taea te kati te pānui hokohoko hei te %ds</item>
+        <item quantity="many">Ka taea te kati te pānui hokohoko hei te %ds</item>
+        <item quantity="other">Ka taea te kati te pānui hokohoko hei te %ds</item>
+    </plurals>
+    <plurals name="hiad_no_prompt_in_days">
+        <item quantity="zero">Kia maumahara ki te kōwhiringa mō te %1$s rā</item>
+        <item quantity="one">Kia maumahara ki te kōwhiringa mō te %1$s rā</item>
+        <item quantity="two">Kia maumahara ki te kōwhiringa mō te %1$s rā</item>
+        <item quantity="few">Kia maumahara ki te kōwhiringa mō te %1$s rā</item>
+        <item quantity="many">Kia maumahara ki te kōwhiringa mō te %1$s rā</item>
+        <item quantity="other">Kia maumahara ki te kōwhiringa mō te %1$s rā</item>
+    </plurals>
+    <plurals name="hiad_reward_before_rw_time_countdown">
+        <item quantity="zero">Whiwhi i tētahi whiwhinga hei %ds</item>
+        <item quantity="one">Whiwhi i tētahi whiwhinga hei %ds</item>
+        <item quantity="two">Whiwhi i tētahi whiwhinga hei %ds</item>
+        <item quantity="few">Whiwhi i tētahi whiwhinga hei %ds</item>
+        <item quantity="many">Whiwhi i tētahi whiwhinga hei %ds</item>
+        <item quantity="other">Whiwhi i tētahi whiwhinga hei %ds</item>
+    </plurals>
+    <plurals name="hiad_reward_close_dialog_message">
+        <item quantity="zero">Mātakitaki mō te %d hēkona hei whiwhi i tētahi whiwhinga.</item>
+        <item quantity="one">Mātakitaki mō te %d hēkona hei whiwhi i tētahi whiwhinga.</item>
+        <item quantity="two">Mātakitaki mō te %d hēkona hei whiwhi i tētahi whiwhinga.</item>
+        <item quantity="few">Mātakitaki mō te %d hēkona hei whiwhi i tētahi whiwhinga.</item>
+        <item quantity="many">Mātakitaki mō te %d hēkona hei whiwhi i tētahi whiwhinga.</item>
+        <item quantity="other">Mātakitaki mō te %d hēkona hei whiwhi i tētahi whiwhinga.</item>
+    </plurals>
+    <plurals name="hiad_reward_countdown">
+        <item quantity="zero">%1$d sec</item>
+        <item quantity="one">%1$d sec</item>
+        <item quantity="two">%1$d sec</item>
+        <item quantity="few">%1$d sec</item>
+        <item quantity="many">%1$d sec</item>
+        <item quantity="other">%1$d sec</item>
+    </plurals>
+</resources>

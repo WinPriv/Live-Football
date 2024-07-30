@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="@dimen/hiad_24_dp"/>
+    <solid android:color="@color/hiad_install_success_optimize_card_color"/>
+</shape>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hiad_dismiss_dilaog">
+        <item quantity="other">Jendhela bakal nutup %1$s detik maneh.</item>
+    </plurals>
+    <plurals name="hiad_interstitial_time_countdown">
+        <item quantity="other">Iklan bisa ditutup sawise %d d</item>
+    </plurals>
+    <plurals name="hiad_no_prompt_in_days">
+        <item quantity="other">Eling-eling pilihan suwene %1$s dina</item>
+    </plurals>
+    <plurals name="hiad_reward_before_rw_time_countdown">
+        <item quantity="other">Olehake hadiah sawise %d d</item>
+    </plurals>
+    <plurals name="hiad_reward_close_dialog_message">
+        <item quantity="other">Tonton %d detik suwene kanggo ngolehake hadiah.</item>
+    </plurals>
+    <plurals name="hiad_reward_countdown">
+        <item quantity="other">%1$d det</item>
+    </plurals>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linked_download_box"
+    android:background="@color/hiad_62_percent_black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true">
+    <ImageView
+        android:id="@+id/linked_app_icon"
+        android:background="@drawable/hiad_default_app_icon"
+        android:layout_width="@dimen/hiad_linked_app_icon_size"
+        android:layout_height="@dimen/hiad_linked_app_icon_size"
+        android:layout_marginTop="@dimen/hiad_36_dp"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:textSize="@dimen/hiad_12_dp"
+        android:textColor="@color/hiad_emui_white"
+        android:ellipsize="end"
+        android:id="@+id/linked_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hiad_4_dp"
+        android:lines="1"
+        android:layout_below="@+id/linked_app_icon"
+        android:layout_centerHorizontal="true"
+        style="@style/HIAD_App_title_text"/>
+    <com.huawei.openalliance.ad.ppskit.views.AppDownloadButton xmlns:progress_button="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/linked_app_download_btn"
+        android:paddingTop="@dimen/hiad_12_dp"
+        android:paddingBottom="@dimen/hiad_12_dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hiad_16_dp"
+        android:minHeight="@dimen/hiad_linked_app_download_height"
+        android:layout_below="@+id/linked_app_name"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="@dimen/hiad_16_dp"
+        android:paddingEnd="@dimen/hiad_16_dp"
+        progress_button:hiad_fixedWidth="false"
+        progress_button:hiad_fontFamily="HwChinese-medium"
+        progress_button:hiad_maxWidth="@dimen/hiad_192_dp"
+        progress_button:hiad_minWidth="@dimen/hiad_72_dp"
+        progress_button:hiad_textColor="@color/hiad_emui_8_btn_color"
+        progress_button:hiad_textSize="16sp"
+        style="@style/HIAD_linked_App_download_text"/>
+</RelativeLayout>

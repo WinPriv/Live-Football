@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+    <FrameLayout
+        android:id="@+id/NativeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.anythink.nativead.api.ATNativeAdView
+        android:layout_gravity="center"
+        android:id="@+id/native_ad_view"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <include
+            android:id="@+id/native_selfrender_view"
+            layout="@layout/native_ad_item"/>
+    </com.anythink.nativead.api.ATNativeAdView>
+</androidx.cardview.widget.CardView>

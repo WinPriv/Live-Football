@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hiad_ar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.huawei.openalliance.ad.ppskit.views.PPSArView
+        android:id="@+id/pps_ar_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

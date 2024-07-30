@@ -1,0 +1,36 @@
+package com.huawei.hms.framework.common.check;
+
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.ProviderInfo;
+import android.net.Uri;
+import com.huawei.hms.framework.common.ContextHolder;
+import com.huawei.hms.framework.common.Logger;
+import com.huawei.openalliance.ad.constant.al;
+
+/* loaded from: classes2.dex */
+public class ProviderCheckUtil {
+    private static String TAG = "ProviderCheckUtil";
+
+    public static boolean isValid(Uri uri) {
+        if (uri == null) {
+            return false;
+        }
+        PackageManager packageManager = ContextHolder.getAppContext().getPackageManager();
+        ProviderInfo resolveContentProvider = packageManager.resolveContentProvider(uri.getAuthority(), 0);
+        if (resolveContentProvider != null) {
+            ApplicationInfo applicationInfo = resolveContentProvider.applicationInfo;
+            if (applicationInfo == null) {
+                return false;
+            }
+            String str = applicationInfo.packageName;
+            Logger.v(TAG, "Target provider service's package name is : " + str);
+            if (str == null || packageManager.checkSignatures(al.Code, str) != 0) {
+                return false;
+            }
+            return true;
+        }
+        Logger.w(TAG, "Invalid param");
+        return false;
+    }
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/hiad_menu_item_refresh"
+        android:orderInCategory="100"
+        android:title="@string/hiad_refresh"
+        android:showAsAction="never"/>
+    <item
+        android:id="@+id/hiad_menu_item_copy_link"
+        android:orderInCategory="100"
+        android:title="@string/hiad_copy_link"
+        android:showAsAction="never"/>
+    <item
+        android:id="@+id/hiad_menu_item_open_in_browser"
+        android:orderInCategory="100"
+        android:title="@string/hiad_open_in_browser"
+        android:showAsAction="never"/>
+    <item
+        android:id="@+id/hiad_menu_item_permission"
+        android:orderInCategory="100"
+        android:title="@string/hiad_app_permission"
+        android:showAsAction="never"/>
+    <item
+        android:id="@+id/hiad_menu_item_privacy_policy"
+        android:visible="false"
+        android:orderInCategory="100"
+        android:title="@string/hiad_privacy_policy"
+        android:showAsAction="never"/>
+</menu>

@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="3"
+    android:versionName="1.3"
+    android:compileSdkVersion="34"
+    android:compileSdkVersionCodename="14"
+    package="com.hamkho.livefoot"
+    platformBuildVersionCode="34"
+    platformBuildVersionName="14">
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="33"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <queries>
+        <package android:name="com.ytv.player"/>
+        <package android:name="com.facebook.katana"/>
+        <intent>
+            <action android:name="com.applovin.am.intent.action.APPHUB_SERVICE"/>
+        </intent>
+        <package android:name="com.huawei.hwid"/>
+        <package android:name="com.huawei.hms"/>
+        <package android:name="com.huawei.hwid.tv"/>
+        <package android:name="com.huawei.homevision.launcher"/>
+        <package android:name="com.hihonor.homevision.launcher"/>
+        <package android:name="com.huawei.systemmanager"/>
+        <package android:name="com.hihonor.systemmanager"/>
+        <package android:name="com.huawei.appmarket"/>
+    </queries>
+    <permission
+        android:name="com.hamkho.livefoot.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.hamkho.livefoot.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <permission
+        android:name="com.hamkho.livefoot.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.hamkho.livefoot.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.huawei.permission.sec.MDM.v2"/>
+    <uses-permission android:name="com.hihonor.permission.sec.MDM.v2"/>
+    <uses-permission android:name="com.huawei.permission.sec.ACCESS_UDID"/>
+    <uses-permission android:name="com.hihonor.permission.sec.ACCESS_UDID"/>
+    <uses-permission android:name="com.huawei.permission.app.DOWNLOAD"/>
+    <uses-permission android:name="com.hihonor.permission.MANAGE_FOLD_SCREEN"/>
+    <uses-permission android:name="com.hihonor.permission.MANAGE_FOLD_SCREEN_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <application
+        android:theme="@style/Theme.YSFFootball"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:screenOrientation="portrait"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:fullBackupContent="@xml/backup_rules"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:dataExtractionRules="@xml/data_extraction_rules">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false"/>
+        <activity
+            android:name="com.hamkho.livefoot.Activities.SoccerLive.WatchActivity"
+            android:exported="false"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true"/>
+        <activity
+            android:name="com.hamkho.livefoot.Activities.SoccerLive.EventDetailActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.hamkho.livefoot.Activities.SoccerLive.ChannelDetailActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.hamkho.livefoot.Activities.SoccerLive.ChannelsListActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.hamkho.livefoot.Activities.SoccerLive.LiveMainHolder"
+            android:exported="false"/>
+        <activity
+            android:name="com.hamkho.livefoot.Activities.CricketScores.CricketMainActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.hamkho.livefoot.Activities.FootballScores.AllLeagues.LeagueDetails"
+            android:exported="false"/>
+        <activity
+            android:name="com.hamkho.livefoot.Activities.FootballScores.AllLeagues.LeaguesListActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.hamkho.livefoot.Activities.FootballScores.AllScores.MatchDetails"
+            android:exported="false"/>
+        <activity
+            android:name="com.hamkho.livefoot.Activities.FootballScores.MainFootballScores"
+            android:exported="false"/>
+        <activity
+            android:name="com.hamkho.livefoot.Activities.UpdateActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.hamkho.livefoot.Activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hamkho.livefoot.Activities.MainActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.ironsource.sdk.controller.ControllerActivity"
+            android:configChanges="screenSize|orientation"
+            android:hardwareAccelerated="true"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.ironsource.sdk.controller.InterstitialActivity"
+            android:configChanges="screenSize|orientation"
+            android:hardwareAccelerated="true"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.ironsource.sdk.controller.OpenUrlActivity"
+            android:configChanges="screenSize|orientation"
+            android:hardwareAccelerated="true"/>
+        <provider
+            android:name="com.ironsource.lifecycle.IronsourceLifecycleProvider"
+            android:authorities="com.hamkho.livefoot.IronsourceLifecycleProvider"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.facebook.ads.AudienceNetworkActivity"
+            android:exported="false"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:hardwareAccelerated="true"/>
+        <meta-data
+            android:name="applovin.sdk.key"
+            android:value="@string/MaxSdkKey"/>
+        <activity
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:name="com.anythink.core.activity.AnyThinkGdprAuthActivity"
+            android:launchMode="singleTask"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:name="com.anythink.basead.ui.AdLandscapeActivity"
+            android:launchMode="standard"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:name="com.anythink.basead.ui.AdPortraitActivity"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/anythink_myoffer_half_screen"
+            android:name="com.anythink.basead.ui.AdLandscapeTranslucentActivity"
+            android:launchMode="standard"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/anythink_myoffer_half_screen"
+            android:name="com.anythink.basead.ui.AdPortraitTranslucentActivity"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:name="com.anythink.core.basead.ui.web.WebLandPageActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:name="com.anythink.basead.ui.RewardExitConfirmDialogActivity"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:name="com.anythink.expressad.reward.player.ATRewardVideoActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="standard"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <receiver
+            android:name="com.onesignal.FCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+            <intent-filter android:priority="999">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.hamkho.livefoot"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.onesignal.HmsMessageServiceOneSignal"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.onesignal.NotificationOpenedActivityHMS"
+            android:exported="true"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.onesignal.FCMIntentService"
+            android:exported="false"/>
+        <service
+            android:name="com.onesignal.FCMIntentJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <service
+            android:name="com.onesignal.SyncService"
+            android:exported="false"
+            android:stopWithTask="true"/>
+        <service
+            android:name="com.onesignal.SyncJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.onesignal.PermissionsActivity"
+            android:exported="false"/>
+        <receiver
+            android:name="com.onesignal.NotificationDismissReceiver"
+            android:exported="true"/>
+        <receiver
+            android:name="com.onesignal.BootUpReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.onesignal.UpgradeReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.onesignal.NotificationOpenedReceiver"
+            android:exported="true"
+            android:taskAffinity=""
+            android:excludeFromRecents="true"
+            android:noHistory="true"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.onesignal.NotificationOpenedReceiverAndroid22AndOlder"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:noHistory="true"/>
+        <provider
+            android:name="com.facebook.ads.AudienceNetworkContentProvider"
+            android:exported="false"
+            android:authorities="com.hamkho.livefoot.AudienceNetworkContentProvider"/>
+        <activity
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:name="com.vungle.warren.ui.VungleActivity"
+            android:launchMode="singleTop"
+            android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden"/>
+        <provider
+            android:name="com.vungle.warren.utility.VungleProvider"
+            android:exported="false"
+            android:authorities="com.hamkho.livefoot.vungle-provider"/>
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false"/>
+        <provider
+            android:name="com.applovin.sdk.AppLovinInitProvider"
+            android:exported="false"
+            android:authorities="com.hamkho.livefoot.applovininitprovider"
+            android:initOrder="101"/>
+        <activity
+            android:name="com.applovin.adview.AppLovinFullscreenActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"
+            android:hardwareAccelerated="true"/>
+        <activity
+            android:name="com.applovin.sdk.AppLovinWebViewActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:name="com.applovin.mediation.hybridAds.MaxHybridMRecAdActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:name="com.applovin.mediation.hybridAds.MaxHybridNativeAdActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"
+            android:name="com.applovin.mediation.MaxDebuggerActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"
+            android:name="com.applovin.mediation.MaxDebuggerDetailActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"
+            android:name="com.applovin.mediation.MaxDebuggerMultiAdActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"
+            android:name="com.applovin.mediation.MaxDebuggerAdUnitsListActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"
+            android:name="com.applovin.mediation.MaxDebuggerAdUnitDetailActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"
+            android:name="com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"
+            android:name="com.applovin.mediation.MaxDebuggerTestModeNetworkActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.creative.CreativeDebuggerActivity.Theme"
+            android:name="com.applovin.creative.MaxCreativeDebuggerActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.creative.CreativeDebuggerActivity.Theme"
+            android:name="com.applovin.creative.MaxCreativeDebuggerDisplayedAdActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <service
+            android:name="com.applovin.impl.sdk.utils.AppKilledService"
+            android:exported="false"
+            android:stopWithTask="false"/>
+        <service
+            android:name="com.applovin.impl.adview.activity.FullscreenAdService"
+            android:exported="false"
+            android:stopWithTask="false"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"/>
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="com.hamkho.livefoot.firebaseinitprovider"
+            android:initOrder="100"
+            android:directBootAware="true"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.hamkho.livefoot.androidx-startup">
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.work.WorkManagerInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup"/>
+        </provider>
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false"
+            android:directBootAware="false"/>
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="@bool/enable_system_job_service_default"
+            android:exported="true"
+            android:directBootAware="false"/>
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:enabled="@bool/enable_system_foreground_service_default"
+            android:exported="false"
+            android:directBootAware="false"/>
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable.BroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:directBootAware="false"/>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.BatteryChargingProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.BatteryNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.StorageNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.NetworkStateProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true"/>
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct"/>
+        </service>
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false"/>
+        <provider
+            android:name="com.tramini.plugin.api.TraminiContentProvider"
+            android:exported="false"
+            android:authorities="com.hamkho.livefoot.initprovider"
+            android:initOrder="100"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.vungle.warren.ui.VungleFlexViewActivity"
+            android:launchMode="singleTop"
+            android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden"
+            android:hardwareAccelerated="true"/>
+        <meta-data
+            android:name="hw_ads_sdk_type"
+            android:value="4"/>
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:ads-prime"
+            android:value="ads-prime:3.4.65.300"/>
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:ads-lite-prime"
+            android:value="ads-lite-prime:13.4.65.300"/>
+        <meta-data
+            android:name="networkkit_dynamic_load"
+            android:value="disable"/>
+        <activity
+            android:theme="@android:style/Theme.DeviceDefault"
+            android:label=""
+            android:name="com.huawei.opendevice.open.OAIDSettingActivity"
+            android:exported="true"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="hwppsprivacy"
+                    android:host="com.hamkho.livefoot"/>
+            </intent-filter>
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.WithActionBar"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.WithActionBar"/>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.DeviceDefault"
+            android:label=""
+            android:name="com.huawei.opendevice.open.SimplePrivacyActivity"
+            android:exported="false"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.WithActionBar"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.WithActionBar"/>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.DeviceDefault"
+            android:label=""
+            android:name="com.huawei.opendevice.open.PrivacyActivity"
+            android:exported="true"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="hwppsprivacydetail"
+                    android:host="com.hamkho.livefoot"/>
+            </intent-filter>
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.WithActionBar"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.WithActionBar"/>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.DeviceDefault"
+            android:label=""
+            android:name="com.huawei.opendevice.open.WhyThisAdStatementActivity"
+            android:exported="true"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="hwppsprivacyadinfo"
+                    android:host="com.hamkho.livefoot"/>
+            </intent-filter>
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.WithActionBar"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.WithActionBar"/>
+        </activity>
+        <meta-data
+            android:name="permission.reason.android.permission-group.CALENDAR"
+            android:resource="@string/hiad_calender_description_new"/>
+        <provider
+            android:name="com.huawei.openalliance.ad.ppskit.provider.InnerApiProvider"
+            android:exported="false"
+            android:authorities="com.hamkho.livefoot.pps.innerapiprovider"/>
+        <service
+            android:name="com.huawei.android.hms.ppskit.PpsCoreService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.huawei.android.hms.ppskit.PPS_API_SERVICE"/>
+            </intent-filter>
+        </service>
+        <activity
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:name="com.huawei.openalliance.ad.ppskit.activity.InstallActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|navigation|keyboardHidden|keyboard|mnc|mcc">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Light.NoTitleBar"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.Light.NoTitleBar"/>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:name="com.huawei.openalliance.ad.ppskit.activity.HMSSDKInstallActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|navigation|keyboardHidden|keyboard|mnc|mcc">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Light.NoTitleBar"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.Light.NoTitleBar"/>
+        </activity>
+        <activity
+            android:label=" "
+            android:name="com.huawei.openalliance.ad.ppskit.activity.PPSActivity"
+            android:exported="false"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="com.huawei.hms.pps.action.PPS_DETAIL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic"/>
+        </activity>
+        <activity
+            android:label=" "
+            android:name="com.huawei.openalliance.ad.ppskit.activity.InnerPPSActivity"
+            android:exported="false"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|navigation|keyboardHidden|keyboard|mnc|mcc">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic"/>
+        </activity>
+        <activity
+            android:label=" "
+            android:name="com.huawei.openalliance.ad.ppskit.activity.InnerPPSArActivity"
+            android:exported="false"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|navigation|keyboardHidden|keyboard|mnc|mcc">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic"/>
+        </activity>
+        <activity
+            android:theme="@style/HiAdThemeNoActionBarFullScreen"
+            android:name="com.huawei.openalliance.ad.ppskit.activity.PPSRewardActivity"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|mnc|mcc"
+            android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="com.huawei.hms.pps.action.PPS_REWARD"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.NoActionBar.Fullscreen"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.NoActionBar.Fullscreen"/>
+            <meta-data
+                android:name="android.notch_support"
+                android:value="false"/>
+        </activity>
+        <activity
+            android:theme="@style/HiAdThemeNoActionBarFullScreen"
+            android:name="com.huawei.openalliance.ad.ppskit.activity.InnerPPSRewardActivity"
+            android:exported="false"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|navigation|keyboardHidden|keyboard|mnc|mcc">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.NoActionBar.Fullscreen"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.NoActionBar.Fullscreen"/>
+            <meta-data
+                android:name="android.notch_support"
+                android:value="false"/>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:name="com.huawei.openalliance.ad.ppskit.activity.InnerPPSInterstitialAdActivity"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|navigation|keyboardHidden|keyboard|mnc|mcc">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar.Fullscreen"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar.Fullscreen"/>
+            <meta-data
+                android:name="android.notch_support"
+                android:value="false"/>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:name="com.huawei.openalliance.ad.ppskit.activity.InterstitialAdActivity"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|navigation|keyboardHidden|keyboard|mnc|mcc"
+            android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="com.huawei.hms.pps.action.PPS_INTERSTITIAL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar.Fullscreen"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar.Fullscreen"/>
+            <meta-data
+                android:name="android.notch_support"
+                android:value="false"/>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.huawei.openalliance.ad.ppskit.activity.AgProtocolActivity"
+            android:exported="false"
+            android:configChanges="screenSize|orientation">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar"/>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:name="com.huawei.openalliance.ad.ppskit.activity.PPSArActivity"
+            android:exported="false"
+            android:configChanges="screenSize|orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="com.huawei.hms.pps.action.PPS_AR"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.NoActionBar.Fullscreen"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.NoTitleBar.Fullscreen"/>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.DeviceDefault"
+            android:name="com.huawei.openalliance.ad.ppskit.activity.SplashFeedbackActivity"
+            android:exported="false"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="com.huawei.hms.pps.action.PPS_SPLASH_FEEDBACK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.WithActionBar"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.WithActionBar"/>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.DeviceDefault"
+            android:label=""
+            android:name="com.huawei.openalliance.ad.ppskit.activity.AdComplainActivity"
+            android:exported="false"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="com.huawei.hms.pps.action.PPS_NATIVE_COMPLAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.WithActionBar"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.WithActionBar"/>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label=""
+            android:name="com.huawei.openalliance.ad.ppskit.activity.LandingDetailsActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="com.huawei.hms.pps.action.PPS_LANDING_DETAIL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar"/>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.huawei.openalliance.ad.ppskit.activity.PPSFullScreenNotifyActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:configChanges="screenSize|orientation|keyboardHidden">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar"/>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.huawei.openalliance.ad.ppskit.activity.ComplianceActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar"/>
+        </activity>
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:ads-banner"
+            android:value="ads-banner:13.4.65.300"/>
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:ads-native"
+            android:value="ads-native:13.4.65.300"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.huawei.openalliance.ad.activity.FeedbackActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar"/>
+        </activity>
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:ads-interstitial"
+            android:value="ads-interstitial:13.4.65.300"/>
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:ads-reward"
+            android:value="ads-reward:13.4.65.300"/>
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:ads-lang"
+            android:value="ads-lang:13.4.65.300"/>
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:ads-splash"
+            android:value="ads-splash:13.4.65.300"/>
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:ads-instream"
+            android:value="ads-instream:13.4.65.300"/>
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:ads-jsbridge"
+            android:value="ads-jsbridge:3.4.65.300"/>
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:pps-phone:adsbrainkit"
+            android:value="1"/>
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:ads-base"
+            android:value="ads-base:13.4.65.300"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.huawei.openalliance.ad.activity.PPSLauncherActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="hwpps"
+                    android:host="com.hamkho.livefoot"/>
+            </intent-filter>
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar"/>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.huawei.openalliance.ad.activity.PPSBridgeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar"/>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.huawei.openalliance.ad.activity.PPSNotificationActivity"
+            android:exported="false">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar"/>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.huawei.openalliance.ad.activity.AgProtocolActivity"
+            android:exported="false"
+            android:configChanges="screenSize|orientation">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar"/>
+        </activity>
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:pps-phone:adsuiengine"
+            android:value="1"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.huawei.openalliance.ad.activity.TemplateStubActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="com.huawei.hms.pps.action.PPS_STUB"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar"/>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.huawei.openalliance.ad.activity.ComplianceActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+            <meta-data
+                android:name="hnc-theme"
+                android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar"/>
+        </activity>
+        <provider
+            android:name="com.huawei.openalliance.ad.provider.PPSECProvider"
+            android:exported="true"
+            android:authorities="com.hamkho.livefoot.pps.ecprovider"/>
+        <meta-data
+            android:name="componentverify_ag_cbg_root"
+            android:value="@string/ag_sdk_cbg_root"/>
+    </application>
+</manifest>

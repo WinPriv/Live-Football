@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ChannRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ntv"/>
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/ChannsShimmer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ntv"
+            app:shimmer_duration="500">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/todaymatchescardshimmer"/>
+                <include layout="@layout/todaymatchescardshimmer"/>
+                <include layout="@layout/todaymatchescardshimmer"/>
+                <include layout="@layout/todaymatchescardshimmer"/>
+                <include layout="@layout/todaymatchescardshimmer"/>
+                <include layout="@layout/todaymatchescardshimmer"/>
+                <include layout="@layout/todaymatchescardshimmer"/>
+                <include layout="@layout/todaymatchescardshimmer"/>
+                <include layout="@layout/todaymatchescardshimmer"/>
+                <include layout="@layout/todaymatchescardshimmer"/>
+                <include layout="@layout/todaymatchescardshimmer"/>
+                <include layout="@layout/todaymatchescardshimmer"/>
+                <include layout="@layout/todaymatchescardshimmer"/>
+                <include layout="@layout/todaymatchescardshimmer"/>
+                <include layout="@layout/todaymatchescardshimmer"/>
+                <include layout="@layout/todaymatchescardshimmer"/>
+                <include layout="@layout/todaymatchescardshimmer"/>
+                <include layout="@layout/todaymatchescardshimmer"/>
+                <include layout="@layout/todaymatchescardshimmer"/>
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

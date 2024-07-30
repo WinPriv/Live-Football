@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Przewiń do przodu o %d sekundę</item>
+        <item quantity="few">Przewiń do przodu o %d sekundy</item>
+        <item quantity="many">Przewiń do przodu o %d sekund</item>
+        <item quantity="other">Przewiń do przodu o %d sekundy</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Przewiń do tyłu o %d sekundę</item>
+        <item quantity="few">Przewiń do tyłu o %d sekundy</item>
+        <item quantity="many">Przewiń do tyłu o %d sekund</item>
+        <item quantity="other">Przewiń do tyłu o %d sekundy</item>
+    </plurals>
+    <plurals name="hiad_dismiss_dilaog">
+        <item quantity="one">Okno zostanie zamknięte za %1$s sekundę.</item>
+        <item quantity="few">Okno zostanie zamknięte za %1$s sekundy.</item>
+        <item quantity="many">Okno zostanie zamknięte za %1$s sekund.</item>
+        <item quantity="other">Okno zostanie zamknięte za %1$s sekundy.</item>
+    </plurals>
+    <plurals name="hiad_interstitial_time_countdown">
+        <item quantity="one">Możesz zamknąć reklamę za %d sek.</item>
+        <item quantity="few">Możesz zamknąć reklamę za %d sek.</item>
+        <item quantity="many">Możesz zamknąć reklamę za %d sek.</item>
+        <item quantity="other">Możesz zamknąć reklamę za %d sek.</item>
+    </plurals>
+    <plurals name="hiad_no_prompt_in_days">
+        <item quantity="one">Pamiętaj wybór przez %1$s dzień</item>
+        <item quantity="few">Pamiętaj wybór przez %1$s dni</item>
+        <item quantity="many">Pamiętaj wybór przez %1$s dni</item>
+        <item quantity="other">Pamiętaj wybór przez %1$s dnia</item>
+    </plurals>
+    <plurals name="hiad_reward_before_rw_time_countdown">
+        <item quantity="one">Zdobądź nagrody za %d sek.</item>
+        <item quantity="few">Zdobądź nagrody za %d sek.</item>
+        <item quantity="many">Zdobądź nagrody za %d sek.</item>
+        <item quantity="other">Zdobądź nagrody za %d sek.</item>
+    </plurals>
+    <plurals name="hiad_reward_close_dialog_message">
+        <item quantity="one">Oglądaj przez %d sekundę, aby zdobyć nagrody.</item>
+        <item quantity="few">Oglądaj przez %d sekundy, aby zdobyć nagrody.</item>
+        <item quantity="many">Oglądaj przez %d sekund, aby zdobyć nagrody.</item>
+        <item quantity="other">Oglądaj przez %d sekundy, aby zdobyć nagrody.</item>
+    </plurals>
+    <plurals name="hiad_reward_countdown">
+        <item quantity="one">%1$d sekunda</item>
+        <item quantity="few">%1$d sekundy</item>
+        <item quantity="many">%1$d sekund</item>
+        <item quantity="other">%1$d sekundy</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nowe powiadomienie</item>
+        <item quantity="few">%d nowe powiadomienia</item>
+        <item quantity="many">%d nowych powiadomień</item>
+        <item quantity="other">%d nowego powiadomienia</item>
+    </plurals>
+</resources>

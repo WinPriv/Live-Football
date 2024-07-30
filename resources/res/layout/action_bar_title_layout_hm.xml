@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/hiad_emui_color_subbg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:ellipsize="end"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/custom_action_bar_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"/>
+</LinearLayout>

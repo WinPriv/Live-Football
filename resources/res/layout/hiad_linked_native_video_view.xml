@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.huawei.openalliance.ad.ppskit.views.VideoView
+        android:id="@+id/hiad_id_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+    <com.huawei.openalliance.ad.ppskit.linked.view.LinkedNativeViewControlPanel
+        android:id="@+id/hiad_link_native_video_ctrl_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+    <com.huawei.openalliance.ad.ppskit.linked.view.LinkedAppDetailView
+        android:id="@+id/hiad_link_app_detail"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+</merge>

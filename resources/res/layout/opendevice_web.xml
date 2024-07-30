@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.openalliance.ad.ppskit.views.web.NetworkLoadStatusView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/status_view"
+    android:background="@color/hiad_color_bg"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    ptr:nonNetworkText="@string/opendevice_network_no_available">
+    <LinearLayout
+        android:enabled="false"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:id="@+id/content_statement"
+        android:background="@color/emui_color_bg"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/hiad_12_dp"
+        android:layout_marginRight="@dimen/hiad_12_dp"
+        android:layout_marginStart="@dimen/hiad_12_dp"
+        android:layout_marginEnd="@dimen/hiad_12_dp">
+        <WebView
+            android:id="@+id/content_webview"
+            android:scrollbars="none"
+            android:clipToPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</com.huawei.openalliance.ad.ppskit.views.web.NetworkLoadStatusView>

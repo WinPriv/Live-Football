@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Avançar %d segundo</item>
+        <item quantity="other">Avançar %d segundos</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Voltar %d segundo</item>
+        <item quantity="other">Voltar %d segundos</item>
+    </plurals>
+    <plurals name="hiad_dismiss_dilaog">
+        <item quantity="one">A janela será fechada em %1$s segundo.</item>
+        <item quantity="other">A janela será fechada em %1$s segundos.</item>
+    </plurals>
+    <plurals name="hiad_interstitial_time_countdown">
+        <item quantity="one">O anúncio pode ser fechado em %d s</item>
+        <item quantity="other">O anúncio pode ser fechado em %d s</item>
+    </plurals>
+    <plurals name="hiad_no_prompt_in_days">
+        <item quantity="one">Lembrar escolha para %1$s dia</item>
+        <item quantity="other">Lembrar escolha para %1$s dias</item>
+    </plurals>
+    <plurals name="hiad_reward_before_rw_time_countdown">
+        <item quantity="one">Ganhe uma recompensa em %d s</item>
+        <item quantity="other">Ganhe uma recompensa em %d s</item>
+    </plurals>
+    <plurals name="hiad_reward_close_dialog_message">
+        <item quantity="one">Assista por %d segundo para ganhar uma recompensa.</item>
+        <item quantity="other">Assista por %d segundos para ganhar uma recompensa.</item>
+    </plurals>
+    <plurals name="hiad_reward_countdown">
+        <item quantity="one">%1$d s</item>
+        <item quantity="other">%1$d s</item>
+    </plurals>
+</resources>
